@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>Nhập số đo</table>
+<br>
+<input id="soDo1" type="text"> <br>
+<input id="soDo2" type="text"><br>
+<input id="soDo3" type="text">
+<button onclick="check()">Check</button>
+<h3 id="ketQua"></h3>
+<script>
+function check() {
+    let a = +document.getElementById("soDo1").value;
+    let b = +document.getElementById("soDo2").value;
+    let c = +document.getElementById("soDo3").value;
+    if (a > 0 && b > 0 && c > 0 && a+b>c && b+c>a && a+c>b){
+        document.getElementById("ketQua").innerHTML = "Đúng là tam giác nha cưng"
+    }else {
+        document.getElementById("ketQua").innerHTML = "k phai tam giac nha cưng"
+    }
+}
+</script>
+</body>
+</html>

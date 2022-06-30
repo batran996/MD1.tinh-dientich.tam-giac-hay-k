@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>cạnh hình vuông</table>
+<input id="dauVao" type="text"> <br>
+<table>cạnh hình chữ nhật</table>
+<input id="hinhChuNhat" type="text">
+<input id="hinhChuNhat1" type="text">
+<button onclick="check()"> tinh S</button>
+<h3 id="ketQua"></h3>
+
+<script>
+    function check() {
+        let a =+document.getElementById("dauVao").value;
+        let s = a*a
+        document.getElementById("ketQua").innerHTML = "dien tich la " + s;
+        let dai = +document.getElementById("hinhChuNhat").value;
+        let rong = +document.getElementById("hinhChuNhat1").value;
+        let dienTich = dai * rong
+        document.getElementById("ketQua").innerHTML = "diện tích là " + dienTich;
+    }
+
+</script>
+</body>
+</html>
